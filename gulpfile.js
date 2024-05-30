@@ -5,6 +5,8 @@ import terser from 'gulp-terser'
 
 const sass = gulpSass(dartSass)
 
+
+
 const paths = {
     scss: 'src/scss/**/*.scss',
     js: 'src/js/**/*.js'
