@@ -8,18 +8,18 @@
     <form class="formulario" method="POST" action="/cambiar-password">
         <div class="campo">
             <label for="nombre">Password Actual</label>
-            <input
+            <input class="forbidden"
                 type="password"
                 name="password_actual"
-                placeholder="Tu Password Actual"
+                placeholder="Tu Password Actual" readonly
             />
         </div>
         <div class="campo">
             <label for="nombre">Password Nuevo</label>
-            <input
+            <input class="forbidden"
                 type="password"
                 name="password_nuevo"
-                placeholder="Tu Password Nuevo"
+                placeholder="Tu Password Nuevo" readonly
             />
         </div>
 

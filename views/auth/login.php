@@ -1,4 +1,15 @@
 <div class="contenedor login">
+
+<div class="contendedor-sm">
+<div class="mensaje-emergente">
+            <h1>Informational Purposes Only</h1>
+            <p>Dear guest,<br>
+               Please use these credentials to login and take a look inside 👀<br>
+               <span class="click-to-copy" data-copy="adminguest@gmail.com">adminguest@gmail.com</span><br>
+               <span class="click-to-copy" data-copy="guest123456">guest123456</span>
+            </p>
+        </div>
+</div>
 <?php include_once __DIR__ . '/../planillas/nombreSitio.php';?>
 
     <div class="contenedor-sm">
@@ -23,3 +34,16 @@
         </div>
     </div>
 </div>
+
+<script>
+document.querySelectorAll('.click-to-copy').forEach(element => {
+    element.addEventListener('click', () => {
+        const textToCopy = element.getAttribute('data-copy');
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            alert('Copied to clipboard: ' + textToCopy);
+        }).catch(err => {
+            console.error('Failed to copy text: ', err);
+        });
+    });
+});
+</script>

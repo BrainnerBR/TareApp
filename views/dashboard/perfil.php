@@ -13,7 +13,7 @@
         </div>
         <div class="campo">
             <label for="email">Email</label>
-            <input type="texto" value="<?php echo $usuario->email; ?>" name="email" placeholder="Tu Email">
+            <input class="forbidden" type="texto" value="<?php echo $usuario->email; ?>" name="email" placeholder="Tu Email" readonly>
         </div>
 
         <input type="submit" value="Guardar Cambios">

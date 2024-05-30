@@ -3,3 +3,7 @@
 @use 'auth';
 @use 'dashboard';
 @use 'dark';
+
+.forbidden{
+    cursor: not-allowed;
+}

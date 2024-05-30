@@ -1,8 +1,10 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
+
 .login {
     margin-top: 5rem;
+    
     .uptask {
         @include m.textoDegradado(v.$cyan);
     }
@@ -15,6 +17,36 @@
     .acciones {
         a {
             color: v.$cyan;
+        }
+    }
+    
+    .mensaje-emergente {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 1rem;
+        border-radius: 0 0 1rem 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+
+        h1 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin: 0;
+
+            .click-to-copy {
+                display: block;
+                color: v.$cyan;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
